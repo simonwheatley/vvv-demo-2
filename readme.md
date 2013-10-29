@@ -2,7 +2,7 @@
 
 This is one of a series of demonstrations of the auto-sitesetup designed to be used with [Varying Vagrants Vagrant](https://github.com/simonwheatley/varying-vagrant-vagrants/tree/feature/auto-site-setup-xteam) (Simon's fork, the X-Team auto site setup branch for now).
 
-This demo shows a site setup Composer, with some WP CLI commands; this one's for [Rarst](http://composer.rarst.net/).
+This demo shows a site setup using Composer and some WP CLI commands; this one's for [Rarst](http://composer.rarst.net/).
 
 To get started:
 
