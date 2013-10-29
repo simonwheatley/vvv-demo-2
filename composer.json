@@ -1,0 +1,41 @@
+{
+	"name"        : "simonwheatley/vvv-demo-2",
+	"description" : "VVV Auto Bootstrap Demo 2: WordPress stack via Composer",
+	"authors"     : [
+		{
+			"name"    : "Simon Wheatley",
+			"email"   : "simonw@codeforthepeople.com",
+			"homepage": "http://codeforthepeople.com/"
+		}
+	],
+	"type"        : "project",
+	"minimum-stability": "dev",
+	"repositories": [
+		{
+			"type": "composer",
+			"url" : "http://wpackagist.org"
+		},
+		{
+			"type": "composer",
+			"url" : "http://rarst.net"
+		}
+	],
+	"config"      : {
+		"vendor-dir":  "vendor"
+	},
+	"require"     : {
+		"rarst/wordpress"                      : "3.7.x",
+		"wpackagist/advanced-custom-fields"    : "*",
+		"wpackagist/user-switching"            : "*"
+	},
+	"require-dev" : {
+		"wpackagist/log-deprecated-notices"    : "*"
+	},
+	"extra"       : {
+		"wordpress-install-dir": "htdocs/",
+		"installer-paths": {
+			"htdocs/wp-content/plugins/{$name}/" : ["type:wordpress-plugin"],
+			"htdocs/wp-content/themes/{$name}/"  : ["type:wordpress-theme"]
+		}
+	}
+}
