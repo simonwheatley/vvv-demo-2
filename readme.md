@@ -12,8 +12,5 @@ To get started:
 4. If your Vagrant is running, from the Vagrant directory run `vagrant halt`
 5. Followed by `vagrant up --provision`.  Perhaps a cup of tea now? The provisioning may take a while.
 
-Then you can visit [http://vvv-demo-1.dev/](http://vvv-demo-1.dev/)
-
-
 Then you can visit [http://vvv-demo-2.dev/](http://vvv-demo-2.dev/)
 
