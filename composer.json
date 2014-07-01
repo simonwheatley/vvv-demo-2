@@ -25,11 +25,11 @@
 	},
 	"require"     : {
 		"rarst/wordpress"                      : "3.7.x",
-		"wpackagist/advanced-custom-fields"    : "*",
-		"wpackagist/user-switching"            : "*"
+		"wpackagist-plugin/advanced-custom-fields"    : "*",
+		"wpackagist-plugin/user-switching"            : "*"
 	},
 	"require-dev" : {
-		"wpackagist/log-deprecated-notices"    : "*"
+		"wpackagist-plugin/log-deprecated-notices"    : "*"
 	},
 	"extra"       : {
 		"wordpress-install-dir": "htdocs/",
