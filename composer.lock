@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "6d22390bb87f42c7271c61fd45840582",
+    "hash": "97a8b7babbf9b92a4a463cbd0da4d712",
     "packages": [
         {
             "name": "composer/installers",
@@ -11,20 +11,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "d792632d27e1980d921cbbba12eab7b888338d4c"
+                "reference": "9eb391bcafef76503d0bd4e585756391efc8740f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/d792632d27e1980d921cbbba12eab7b888338d4c",
-                "reference": "d792632d27e1980d921cbbba12eab7b888338d4c",
+                "url": "https://api.github.com/repos/composer/installers/zipball/9eb391bcafef76503d0bd4e585756391efc8740f",
+                "reference": "9eb391bcafef76503d0bd4e585756391efc8740f",
                 "shasum": ""
             },
             "replace": {
+                "roundcube/plugin-installer": "*",
                 "shama/baton": "*"
             },
             "require-dev": {
                 "composer/composer": "1.0.*@dev",
-                "phpunit/phpunit": "3.7.*"
+                "phpunit/phpunit": "4.1.*"
             },
             "type": "composer-installer",
             "extra": {
@@ -53,31 +54,45 @@
             "description": "A multi-framework Composer library installer",
             "homepage": "http://composer.github.com/installers/",
             "keywords": [
-                "TYPO3 CMS",
-                "TYPO3 Flow",
-                "TYPO3 Neos",
+                "Craft",
+                "Dolibarr",
+                "Hurad",
+                "MODX Evo",
+                "OXID",
+                "WolfCMS",
                 "agl",
+                "annotatecms",
+                "bitrix",
                 "cakephp",
                 "codeigniter",
                 "concrete5",
+                "croogo",
                 "drupal",
+                "elgg",
                 "fuelphp",
                 "installer",
                 "joomla",
                 "kohana",
                 "laravel",
-                "li3",
                 "lithium",
+                "magento",
                 "mako",
+                "mediawiki",
                 "modulework",
+                "moodle",
                 "phpbb",
+                "piwik",
                 "ppi",
+                "roundcube",
+                "shopware",
                 "silverstripe",
                 "symfony",
+                "typo3",
                 "wordpress",
-                "zend"
+                "zend",
+                "zikula"
             ],
-            "time": "2013-10-24 16:13:49"
+            "time": "2014-06-27 16:11:39"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -144,8 +159,13 @@
             "type": "wordpress-core"
         },
         {
-            "name": "wpackagist/advanced-custom-fields",
-            "version": "trunk",
+            "name": "wpackagist-plugin/advanced-custom-fields",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/advanced-custom-fields/",
+                "reference": "trunk"
+            },
             "dist": {
                 "type": "zip",
                 "url": "http://downloads.wordpress.org/plugin/advanced-custom-fields.zip",
@@ -155,12 +175,21 @@
             "require": {
                 "composer/installers": "~1.0"
             },
+            "replace": {
+                "wpackagist/advanced-custom-fields": "self.version"
+            },
             "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/extend/plugins/advanced-custom-fields"
+            "homepage": "http://wordpress.org/plugins/advanced-custom-fields/",
+            "time": "2014-05-05 05:16:34"
         },
         {
-            "name": "wpackagist/user-switching",
-            "version": "trunk",
+            "name": "wpackagist-plugin/user-switching",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/user-switching/",
+                "reference": "trunk"
+            },
             "dist": {
                 "type": "zip",
                 "url": "http://downloads.wordpress.org/plugin/user-switching.zip",
@@ -170,14 +199,23 @@
             "require": {
                 "composer/installers": "~1.0"
             },
+            "replace": {
+                "wpackagist/user-switching": "self.version"
+            },
             "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/extend/plugins/user-switching"
+            "homepage": "http://wordpress.org/plugins/user-switching/",
+            "time": "2014-05-01 22:40:02"
         }
     ],
     "packages-dev": [
         {
-            "name": "wpackagist/log-deprecated-notices",
-            "version": "trunk",
+            "name": "wpackagist-plugin/log-deprecated-notices",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/log-deprecated-notices/",
+                "reference": "trunk"
+            },
             "dist": {
                 "type": "zip",
                 "url": "http://downloads.wordpress.org/plugin/log-deprecated-notices.zip",
@@ -187,8 +225,12 @@
             "require": {
                 "composer/installers": "~1.0"
             },
+            "replace": {
+                "wpackagist/log-deprecated-notices": "self.version"
+            },
             "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/extend/plugins/log-deprecated-notices"
+            "homepage": "http://wordpress.org/plugins/log-deprecated-notices/",
+            "time": "2013-03-08 21:03:50"
         }
     ],
     "aliases": [
