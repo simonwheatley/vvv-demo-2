@@ -14,7 +14,11 @@ composer install --prefer-dist
 if [ ! -f htdocs/wp-config.php ]
 then
 	echo "Creating wp-config.php and installing WordPress"
-	wp core config --dbname="vvv_demo_2" --dbuser=wp --dbpass=wp --dbhost="localhost"
+	wp core config --dbname="vvv_demo_2" --dbuser=wp --dbpass=wp --dbhost="localhost" --extra-php <<PHP
+define( 'WP_CONTENT_DIR', dirname(__FILE__) . '/wp-content/' );
+define( 'WP_SITEURL',     'http://vvv-demo-2.dev/wordpress/');
+PHP
+	mv htdocs/wordpress/wp-config.php htdocs/
 	wp core install --url=vvv-demo-2.dev --title="VVV Bootstrap Demo 2" --admin_user=admin --admin_password=password --admin_email=demo@example.com
 fi
 

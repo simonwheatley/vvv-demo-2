@@ -26,13 +26,14 @@
 	"require"     : {
 		"johnpbloch/wordpress"                        : "3.9.x",
 		"wpackagist-plugin/advanced-custom-fields"    : "*",
-		"wpackagist-plugin/user-switching"            : "*"
+		"wpackagist-plugin/user-switching"            : "*",
+		"wpackagist-theme/twentyfourteen"             : "*"
 	},
 	"require-dev" : {
 		"wpackagist-plugin/log-deprecated-notices"    : "*"
 	},
 	"extra"       : {
-		"wordpress-install-dir": "htdocs/",
+		"wordpress-install-dir": "htdocs/wordpress",
 		"installer-paths": {
 			"htdocs/wp-content/plugins/{$name}/" : ["type:wordpress-plugin"],
 			"htdocs/wp-content/themes/{$name}/"  : ["type:wordpress-theme"]
