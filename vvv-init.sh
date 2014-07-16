@@ -20,6 +20,7 @@ define( 'WP_SITEURL',     'http://vvv-demo-2.dev/wordpress/');
 PHP
 	mv htdocs/wordpress/wp-config.php htdocs/
 	wp core install --url=vvv-demo-2.dev --title="VVV Bootstrap Demo 2" --admin_user=admin --admin_password=password --admin_email=demo@example.com
+	wp option update permalink_structure "/%year%/%monthnum%/%postname%/"
 fi
 
 # The Vagrant site setup script will restart Nginx for us
