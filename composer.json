@@ -24,7 +24,7 @@
 		"vendor-dir":  "vendor"
 	},
 	"require"     : {
-		"rarst/wordpress"                      : "3.7.x",
+		"johnpbloch/wordpress"                        : "3.9.x",
 		"wpackagist-plugin/advanced-custom-fields"    : "*",
 		"wpackagist-plugin/user-switching"            : "*"
 	},
